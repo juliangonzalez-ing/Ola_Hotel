@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+
+* {
+    padding: 30;
+    margin: 0;
+}
+
+/*Agregamos margenes inferiores a los parrafos*/
+
+p {
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;    
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+body{
+    background-image: url("../img/wp4814454.jpg");
+    background-size: cover;/*reescala la imagen*/
+   background-position: center;/*centra la imagen*/
+   background-repeat: no-repeat;/*evita que se repita*/
+   color: #CCC;
+}
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*#logo{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  vertical-align:auto;
+  /*margin: 0 0 0 2px;*/
+
+*/ nav {
+    float: right;
+    /* Desplazamos el nav hacia la derecha */
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    /* Limpiamos errores de float */
+}
+
+nav ul li {
+    float: right;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #0a8edb;
+}
+
+
+.contenido {
+    padding-top: 80px;
+}
+
+.flexboxLogoContacto {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.flexbox div {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(194, 206, 22);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: solid 1px rgb(0, 0, 0);
+    margin-left: 100px;
+    margin-bottom: 60px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+.flexboxredessociales div {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+
+.flexboxredessociales {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#piepagina {
+    height: 80px;
+    line-height: 80px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
