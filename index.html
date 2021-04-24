@@ -5,140 +5,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Ola Hoteles</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <!--<li><a href="#">PQR</a></li>-->
-                <li><a onclick="loSentimos()">PQR</a></li>
-                <li><a target="_blank" href="./html/contact.html">Contacto</a></li>
-                <li><a onclick="loSentimos()">Nuestras Instalaciones</a></li>
-                <li><a onclick="loSentimos()">Quienes Somos</a></li>
-                <li><a href="#">Inicio</a></li>
-                <li><img style="width: 80px; height: 80px;" id="logo" src="./img/logo-ola.png" alt="imagen logo"></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="flexboxLogoContacto">
-        <div>
-            <img style="width: 400px; height: 400px;" src="./img/logo-ola.png" alt="">
-        </div>
-        <div>
-            <form action="">
-                <h1>Quiero Información</h1> <br>
-                <ul>
-                    <li> <label for="">Su Nombre: <input type="text" name="nombreusuario" id="nombre"> </label>
+    <div class="container">
+        <nav class="navbar navbar-fixed navbar-expand-lg navbar-dark" style="background-color: black;">
+            <div class="collapse navbar-collapse w-100 order-1 order-lg-1" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio </a>
                     </li>
-                    <li> <label for="">Telefono: <input type="number" name="telefonousuario" id="telefono"> </label><br>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
                     </li>
-                    <li>
-                        <label for="">Su correo: <input type="text" name="apellidousuario" id="apellido"> </label>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
                     </li>
-                    <li>
-                        <label for="">Su mensaje: <textarea name="mensaje"> </textarea></label>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
                     </li>
-                    <li class="buttonenviar">
-                        <button type="submit">Envíe su mensaje</button>
-                    </li>
-                    <li class="buttonborrar">
-                        <button type="reset">Borrar</button>
-                    </li>
-
                 </ul>
-
-            </form>
-        </div>
-    </div>
-    <section class="contenido wrapper">
-
-        <h3> Bienvenido a</h3>
-        <h1>Ola Hoteles </h1>
-        <h3> Descanso y Confort</h3>
-        <h2>EXPERIMENTE NUESTRO HOTEL Y VEA LO QUE NOS DISTINGUE</h2><br>
-
-        <p>Para el viajero distinguido, ningún otro hotel en Bogotá ofrece una experiencia de estilo de vida más
-            contemporánea que Olas Hoteles. Nuestras habitaciones de alta tecnología, restaurantes de clase mundial,
-            exquisitos salones para banquetes y un servicio atento nos distinguen. La conveniencia, la conectividad y la
-            comodidad están incorporadas en los diseños de nuestras habitaciones para asegurarnos de que se sienta como
-            en casa. ¡Ven a visitarnos y descubre lo que significa vivir la vida!</p>
-        <h2>Nuestros servicios</h2> <br>
-    </section>
-
-    <div class="flexbox">
-        <div>
-            <img style="width: 200px; height: 200px;" src="./img/spa-hotel.jpg" alt="">
-            <label for="">Lorem, ipsum dolor.</label>
-        </div>
-        <div>
-            <img style="width: 200px; height: 200px;" src="./img/spa-hotel.jpg" alt="">
-            <label for="">Lorem, ipsum dolor.</label>
-        </div>
-        <div>
-            <img style="width: 200px; height: 200px;" src="./img/spa-hotel.jpg" alt="">
-            <label for="">Lorem, ipsum dolor.</label>
-        </div>
-        <div>
-            <img style="width: 200px; height: 200px;" src="./img/spa-hotel.jpg" alt="">
-            <label for="">Lorem, ipsum dolor.</label>
-        </div>
-        <div></div>
-        <div></div>    
-    </div>
-
-            <form action="">
-            <h1>Contáctenos</h1> <br>
-            <ul>
-                <li> <label for="">Su Nombre: <input type="text" name="nombreusuario" id="nombre"> </label>
-                </li>
-                <li>
-                    <label for="">Su Apellido: <input type="text" name="apellidousuario" id="apellido"> </label>
-                </li>
-                <li> <label for="">Telefono: <input type="number" name="telefonousuario" id="telefono"> </label><br>
-                </li>
-                <li>
-                    <label for="">Su correo: <input type="text" name="apellidousuario" id="apellido"> </label>
-                </li>
-                <li>
-                    <label for="">Su mensaje: <textarea name="mensaje"> </textarea></label>
-                </li>
-                <li class="buttonenviar">
-                    <button type="submit">Envíe su mensaje</button>
-                </li>
-                <li class="buttonborrar">
-                    <button type="reset">Borrar</button>
-                </li>
-
-            </ul>
-
-        </form>
-        <section class="contenido wrapper">
-            <h2>Siguenos en nuestras redes sociales </h2> <br>
-            <div class="flexboxredessociales">
-                <div><a target="_blank" href="https://www.facebook.com/"><img src="./img/facebook-logo.png"
-                            alt="facebook-logo" style="width: 80px; height: 80px;"></a></div>
-                <div><a target="_blank" href="https://www.instagram.com/"><img src="./img/instagram-logo.png"
-                            alt="instagram-logo" style="width: 80px; height: 80px;"></a></div>
-                <div><a target="_blank" href="https://www.youtube.com/"><img src="./img/youtube-logo.png"
-                            alt="youtube-logo" style="width: 100px; height: 80px;"></a></div>
-                <div><a target="_blank" href="https://www.whatsapp.com/"><img src="./img/whatsapp-logo.png"
-                            alt="youtube-logo" style="width: 80px; height: 80px;"></a></div>
             </div>
-        </section>
-        
+            <div class="d-flex w-100 order-0">
+                <div class="w-100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo-ola.png" width="100" height="100" alt="" loading="lazy">
+                </a>
+                <!--             <span class="w-100"></span> -->
+            </div>
+        </nav>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="height: 500px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/cama-suite.jpg" style="height: 500px;" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/camas-hotel.jpg" style="height: 500px;" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/cuartohotel.jpg" style="height: 500px;" class="d-block w-100">
+                </div>
+            </div>
+            <div class="card-img-overlay">
+                <div class="container" style="padding-top: 50px;">
+                    <div class="row justify-content-end align-items-center">
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg">
+                                <div class="card-body bg-dark">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <h2 class="h4 text-center text-white">Quiero información</h2>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control-sm" placeholder="Nombre:">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control-sm" placeholder="Email:">
+                                            </div>
+                                            <input type="submit" value="Recibir información"
+                                                class="btn btn-outline-success btn-block">
+                                        </div>
+                                        <p class="small text-white">*Si tienes una consulta personalizada da click <a
+                                                href="assets/html/contact.html">aquí</a> 
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron text-center" id="confondo">
+            <h3> Bienvenido a</h3>
+            <h1>Ola Hoteles </h1>
+            <h3> Descanso y Confort</h3>
+            <span> EXPERIMENTE NUESTRO HOTEL Y VEA LO QUE NOS DISTINGUE</span>
 
+            <p>Para el viajero distinguido, ningún otro hotel en Bogotá ofrece una experiencia de estilo de vida más
+                contemporánea que Olas Hoteles. Nuestras habitaciones de alta tecnología, restaurantes de clase mundial,
+                exquisitos salones para banquetes y un servicio atento nos distinguen. La conveniencia, la conectividad
+                y la
+                comodidad están incorporadas en los diseños de nuestras habitaciones para asegurarnos de que se sienta
+                como
+                en casa. ¡Ven a visitarnos y descubre lo que significa vivir la vida!</p>
+        </div>
+        <div id="confondo">
+            <h1 class="text-center">Nuestros servicios</h1>
+            <div class="flexbox">
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card-1"></div>
+                        <div class="atras">
+                            <div class="titulo">
+                                Doble
+                            </div>
+                            Una habitación sencilla cuenta con una sola cama, o tal vez te den una habitación con dos
+                            camas,
+                            pero eso no significa que puedan ingresar dos personas.
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card-2"></div>
+                        <div class="atras">
+                            <span>Doble</span>
+                            Una habitación doble puede tener dos camas o una cama matrimonial o king size. Es para dos
+                            personas, no más.
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card-3"></div>
+                        <div class="atras">
+                            <span>Suite</span>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit aperiam explicabo
+                            nihil
+                            porro.
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card-3"></div>
+                        <div class="atras">
+                            <span>Spa</span>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit aperiam explicabo
+                            nihil
+                            porro.
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card-2"></div>
+                        <div class="atras">
+                            <span>Sauna</span>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit aperiam explicabo
+                            nihil
+                            porro.
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card-1"></div>
+                        <div class="atras">
+                            <span>Baño turco</span>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit aperiam explicabo
+                            nihil
+                            porro.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="pt-4 text-white" style="background-color: black;">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="navbar-white">Siguenos en nuestras redes sociales</h2>
+                    <ul class="list-group list-group-horizontal justify-content-center"
+                        style="background-color: black;">
+                        <li class="list-group-item" style="border: none; background-color: black;">
+                            <a target="_blank" href="https://www.instagram.com/"><img class="logo"
+                                    src="assets/img/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </li>
+                        <li class="list-group-item" style="border: none;background-color: black;">
+                            <a target="_blank" href="https://www.facebook.com/"><img class="logo"
+                                    src="assets/img/facebook-logo.png" alt="facebook-logo">
+                            </a>
+                        </li>
+                        <li class="list-group-item" style="border: none;background-color: black;">
+                            <a target="_blank" href="https://www.youtube.com/">
+                                <img class="logo" src="assets/img/youtube-logo.png" alt="youtube-logo"
+                                    style="background-color: #fff;border-radius: 20px;">
+                            </a>
+                        </li>
+                        <li class="list-group-item" style="border: none;background-color: black;">
+                            <a target="_blank" href="https://www.whatsapp.com/">
+                                <img class="logo" src="assets/img/whatsapp-logo.png" alt="youtube-logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img class="mb-2" src="assets/img/logo-ola.png" alt="" width="100" height="100">
+                    <small class="d-block mb-3 text-muted">© 2021</small>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="assets/css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/codigos.js"></script>
 </body>
 
-<footer>
-    
-
-    <div>
-        <div id="piepagina"> Bictia-Colsubsidio 2021 &copy; Grupo 4</div>
-    </div>
-</footer>
-<script src="./js/codigos.js"></script>
 
 </html>

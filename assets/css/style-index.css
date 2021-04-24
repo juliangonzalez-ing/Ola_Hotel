@@ -13,7 +13,8 @@ p {
     margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 20px;    
+    font-size: 20px;
+    
 }
 
 header {
@@ -33,7 +34,8 @@ body{
 h1 {
     font-size: 90px;
     text-align: center;
-    font-family: 'Great Vibes', cursive;
+    color: #fff;
+    font-family: 'Great Vibes', cursive;    
 }
 
 h2 {
@@ -90,10 +92,12 @@ nav ul li:hover {
 }
 
 .flexboxLogoContacto {
+    background-image: url("../img/camas-hotel.jpg");
     padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-radius: 5px;
 }
 
 .wrapper {
@@ -102,24 +106,114 @@ nav ul li:hover {
     overflow: hidden;
 }
 
-.flexbox div {
-    width: 200px;
+input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+/* .flexbox div {
+    width: 30%;
     height: 200px;
     background-color: rgb(194, 206, 22);
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border: solid 1px rgb(0, 0, 0);
-    margin-left: 100px;
-    margin-bottom: 60px;
+
+} */
+
+.formulario{
+    background-color: black;
+  opacity: 0.8;
 }
 
 .flexbox {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
+.tarjeta-wrap{
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
 
+}
 
+.tarjeta{
+    width: 330px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.adelante{
+    width: 100%;
+}
+
+.card-1{
+    background-image: url("../img/cama-suite.jpg");
+}
+.card-2{
+    background-image: url("../img/masaje-hotel.jpg");
+}
+.card-3{
+    background-image: url("../img/cuartohotel.jpg");
+}
+
+.atras{
+    transform: rotateY(180deg);
+    webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #fff;  
+}
+
+.titulo{
+    width: 100%;    
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Great Vibes', cursive; 
+}
+
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);      
+}
 
 form {
     /* Centrar el formulario en la página */
@@ -144,26 +238,28 @@ label {
     text-align: right;
 }
 
-.flexboxredessociales div {
-    width: 100px;
-    height: 100px;
-    margin-left: 10px;
-    margin-bottom: 60px;
-}
-
 .flexboxredessociales {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
+    color: white;
 }
-#piepagina {
-    height: 80px;
+
+.flexboxredessociales div{    
+    margin-bottom: -30px;
+}
+
+.pie {    
     line-height: 80px;
     background: rgba(0, 0, 0, 0.9);
     color: white;
     text-align: center;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
