@@ -1,12 +1,27 @@
 body {
-    background: rgb(185,201,196);
-background: linear-gradient(180deg, rgba(185,201,196,0.9668242296918768) 0%, rgba(11,13,13,1) 1%, rgba(21,20,54,1) 100%);
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.967) 0%, rgba(11, 13, 13, 1) 1%, rgba(21, 20, 54, 1) 100%);
+    color: white;
+    font-weight: bolder;
 }
 
-  #confondo{
+/* #confondo{
     background-color: rgba(255,255,255,0.3);
     backdrop-filter: blur(20px);
-  }
+  } */
+
+.confondo {
+    border-radius: 10px;
+    border: solid 5px rgba(255, 255, 255, .1);
+    background: linear-gradient(-45deg, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .05) 60%, rgba(255, 255, 255, .05) 80%, rgba(0, 0, 0, .1) 80%);
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .05) 60%, rgba(255, 255, 255, .05) 80%, rgba(0, 0, 0, .1) 80%);
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .05) 60%, rgba(255, 255, 255, .05) 80%, rgba(0, 0, 0, .1) 80%);
+}
+
+#carouselExampleSlidesOnly{
+    background-color: none;
+}
+
 
 .flexbox {
     display: flex;
@@ -14,14 +29,14 @@ background: linear-gradient(180deg, rgba(185,201,196,0.9668242296918768) 0%, rgb
     justify-content: center;
 }
 
-.tarjeta-wrap{
+.tarjeta-wrap {
     margin: 10px;
     -webkit-perspective: 800;
     perspective: 800;
 
 }
 
-.tarjeta{
+.tarjeta {
     width: 330px;
     height: 300px;
     background-color: black;
@@ -30,7 +45,8 @@ background: linear-gradient(180deg, rgba(185,201,196,0.9668242296918768) 0%, rgb
     transition: .7s ease;
 }
 
-.adelante, .atras{
+.adelante,
+.atras {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -40,21 +56,23 @@ background: linear-gradient(180deg, rgba(185,201,196,0.9668242296918768) 0%, rgb
     backface-visibility: hidden;
 }
 
-.adelante{
+.adelante {
     width: 100%;
 }
 
-.card-1{
+.card-1 {
     background-image: url("../img/cama-suite.jpg");
 }
-.card-2{
+
+.card-2 {
     background-image: url("../img/masaje-hotel.jpg");
 }
-.card-3{
+
+.card-3 {
     background-image: url("../img/cuartohotel.jpg");
 }
 
-.atras{
+.atras {
     transform: rotateY(180deg);
     webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -62,22 +80,22 @@ background: linear-gradient(180deg, rgba(185,201,196,0.9668242296918768) 0%, rgb
     justify-content: center;
     align-items: center;
     text-align: justify;
-    color: #fff;  
+    color: #fff;
 }
 
-.titulo{
-    width: 100%;    
+.titulo {
+    width: 100%;
     font-size: 30px;
     text-align: center;
     color: #fff;
-    font-family: 'Great Vibes', cursive; 
+    font-family: 'Great Vibes', cursive;
 }
 
-.tarjeta-wrap:hover .tarjeta{
-    transform: rotateY(180deg);      
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg);
 }
 
-.logo{
+.logo {
     width: 50px;
     height: 50px;
 }
