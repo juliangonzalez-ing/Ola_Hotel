@@ -1,10 +1,13 @@
 body {
     
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.967) 0%, rgba(11, 13, 13, 1) 1%, rgba(21, 20, 54, 1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(24,121,157,1) 50%, rgba(0,0,0,1) 100%);
     color: white;
     font-weight: bolder;
 }
-
+#portada{
+    color: rgb(235, 235, 243);
+    font-size: larger;
+}
 /* #confondo{
     background-color: rgba(255,255,255,0.3);
     backdrop-filter: blur(20px);
