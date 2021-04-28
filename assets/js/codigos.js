@@ -72,3 +72,21 @@ function select() {
     }
     console.log(precio)
 }
+
+function boletin(){
+   let correoboletin = document.getElementById("email_boletin").value;
+    if (correoboletin != "") {
+        Swal.fire({
+            icon: 'success',
+            title: 'Gracias',
+            text: 'A partir de ahora recibiras nuestras noticias, ofertas y promociones directo a tu correo electronico.',
+        })
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Olvidó Ingresar su correo',
+            
+        })
+    }
+}

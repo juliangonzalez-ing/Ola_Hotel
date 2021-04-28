@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style-servicescovid.css">
+    <link rel="stylesheet" href="../FontAwesome/css/all.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <title>Ola Hoteles Covid-19</title>
 </head>
@@ -46,7 +47,7 @@
             </div>
         </nav>
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Atención</strong> Este sitio web almacena automaticamente cookies ;)
+            <i class="fas fa-cookie-bite"></i><strong> Atención</strong> Este sitio web almacena automaticamente cookies ;)
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -125,7 +126,7 @@
                         <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
                             id="texto-lista">
-                            RESPONSABILIDAD COMPARTIDA
+                            <i class="fas fa-users"></i> RESPONSABILIDAD COMPARTIDA
                         </button>
                     </h2>
                 </div>
@@ -159,7 +160,7 @@
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
                             id="texto-lista">
-                            MEDIDAS DE DISTANCIAMIENTO SOCIAL Y EXPERIENCIAS SIN CONTACTO
+                            <i class="fas fa-head-side-mask"></i> MEDIDAS DE DISTANCIAMIENTO SOCIAL Y EXPERIENCIAS SIN CONTACTO
                         </button>
                     </h2>
                 </div>
@@ -206,7 +207,7 @@
                         <button class="btn btn-link btn-block text-left collapsed hover-none" type="button"
                             data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                             aria-controls="collapseThree" id="texto-lista">
-                            MEJORAS EN PROTOCOLOS DE LIMPIEZA
+                            <i class="fas fa-hand-sparkles"></i> MEJORAS EN PROTOCOLOS DE LIMPIEZA
                         </button>
                     </h2>
                 </div>
@@ -253,7 +254,7 @@
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
                             id="texto-lista">
-                            AMENIDADES Y SERVICIOS DEL HOTEL
+                            <i class="fas fa-hotel"></i> AMENIDADES Y SERVICIOS DEL HOTEL
                         </button>
                     </h2>
                 </div>
@@ -294,12 +295,63 @@
             </div>
         </div>
     </div>
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-one mt-2">
+                    <h3><i class="fas fa-angle-right"></i> Sobre Nosotros</h3>
+                    <p class="parrafos-footer"><ul>
+                        <li><i class="fas fa-map-marker-alt"></i>  Santa Marta, Colombia</li>
+                       <li><i class="fas fa-phone-alt"></i>  Telefono: (031) 886 00 00</li>
+                       <li><i class="fas fa-id-card"></i> <a href="../html/contact.html" target="_blank">Contactenos</a> </li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-two mt-2">
+                    <h3 class="titulo3-footer"> <i class="fas fa-angle-right"></i> Servicios</h3>
+                    <ul>
+                        <li><a href="#"></a><i class="far fa-calendar-check"></i> Eventos</li>
+                        <li><a href="#"></a><i class="fas fa-concierge-bell"></i> Recepciones</li>
+                        <li><a href="#"></a><i class="fas fa-ring"></i> Bodas</li>
+                        <li><a href="#"></a><i class="fas fa-spa"></i> SPA</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-three mt-2">
+                    <h2> <i class="fas fa-angle-right"></i> Siguenos <i class="far fa-thumbs-up"></i></h2>
+                    <p class="parrafos-footer">En nuestras Redes Sociales </p>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-four mt-2">
+                    <h2 class="titulo2-footer"><i class="fas fa-angle-right"></i> Suscribete</h2>
+                    <p class="parrafos-footer">Para obtener Noticias, Ofertas e información relevante de nuestro Hotel
+                        ingrese su correo!.
+                    </p>
+                    <form action="">
+                        <i class="fas fa-at"></i> <input type="email" name="" id="email_boletin">
+                        <input type="button" onclick="boletin()" value="Suscribirse">
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom-text text-center"><i class="fas fa-users"></i> &copy; Grupo 4 Bictia-Colsubsidio <i class="fas fa-users"></i>
+
+    </p>
+</footer>
+
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
 <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+<script src="../FontAwesome/js/all.js"></script>
 <script src="../js/sweetalert2@10.js"></script>
 <script src="../js/codigos.js"></script>
 
