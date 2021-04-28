@@ -1,6 +1,7 @@
 body {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(24,121,157,1) 50%, rgba(0,0,0,1) 100%);
+    color: white;
     /*
     background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(27,168,221,1) 100%);
@@ -19,12 +20,19 @@ h1{
     font-size: 20px;
 }
 
-  #confondo{
-      background-color: #000;
+#texto-lista{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-   /*background-color: rgba(255,255,255,0.3);
+#parrafos{
+    color: #000;
+}
+#confondo{
+    background-color: #000;
+
+/*background-color: rgba(255,255,255,0.3);
     backdrop-filter: blur(20px);*/
-  }
+}
 
 .flexbox {
     display: flex;

@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <title>Ola Hoteles</title>
 </head>
 
 <body>
     <div class="container">
+
         <nav class="navbar navbar-fixed navbar-expand-lg navbar-dark" style="background-color: black;">
             <div class="collapse navbar-collapse w-100 order-1 order-lg-1" id="navbarNav">
                 <ul class="navbar-nav">
@@ -19,16 +21,17 @@
                         <a class="nav-link" href="#">Inicio </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="assets/html/services.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#" onclick="loSentimos()">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link disabled" href="#">Reservaciones</a>
                     </li>
                 </ul>
             </div>
+
             <div class="d-flex w-100 order-0">
                 <div class="w-100">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -41,18 +44,43 @@
                 <!--             <span class="w-100"></span> -->
             </div>
         </nav>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Atención</strong> Este sitio web almacena automaticamente cookies ;)
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading text-center">Bienvenido</h4>
+            <p>Si visita nuestras instalaciones, Tenga en cuenta que se requiere el uso de mascarillas en todas las
+                áreas públicas en el interior.</p>
+            <hr>
+            <p class="mb-0">La salud y la seguridad de nuestros huéspedes son nuestra principal prioridad: <a
+                    href="./assets/html/services-covid19.html" target="_blank"> actualizaciones sobre el COVID-19 y qué esperar en
+                    nuestro hotel.</a></p>
+        </div>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="height: 500px;">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/cama-suite.jpg" style="height: 500px;" class="d-block w-100">
+                    <img src="assets/img/hotel-exterior1.jpg" style="height: 500px;" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/camas-hotel.jpg" style="height: 500px;" class="d-block w-100">
+                    <img src="assets/img/hotel-exterior2.jpg" style="height: 500px;" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/cuartohotel.jpg" style="height: 500px;" class="d-block w-100">
+                    <img src="assets/img/hotel-exterior3.jpg" style="height: 500px;" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hotel-exterior4.jpg" style="height: 500px;" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hotel-exterior5.jpg" style="height: 500px;" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hotel-interior1.jpg" style="height: 500px;" class="d-block w-100">
                 </div>
             </div>
+
             <div class="card-img-overlay">
                 <div class="container" style="padding-top: 50px;">
                     <div class="row justify-content-end align-items-center">
@@ -63,16 +91,18 @@
                                         <div class="form-group">
                                             <h2 class="h4 text-center text-white">Quiero información</h2>
                                             <div class="form-group">
-                                                <input type="text" class="form-control form-control-sm" placeholder="Nombre:">
+                                                <input type="text" class="form-control form-control-sm"
+                                                    placeholder="Su Nombre:" id="nombre_user">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control form-control-sm" placeholder="Email:">
+                                                <input type="text" class="form-control form-control-sm"
+                                                    placeholder="Su Email:" id="email_user">
                                             </div>
-                                            <input type="submit" value="Recibir información"
-                                                class="btn btn-outline-success btn-block">
+                                            <input type="button" value="Recibir información"
+                                                class="btn btn-outline-success btn-block" onclick="darInformacion()">
                                         </div>
                                         <p class="small text-white">*Si tienes una consulta personalizada da click <a
-                                                href="assets/html/contact.html">aquí</a> 
+                                                href="assets/html/contact.html" target="_blank">aquí</a>
                                         </p>
                                     </form>
                                 </div>
@@ -82,33 +112,32 @@
                 </div>
             </div>
         </div>
+
         <div class="jumbotron text-center" id="confondo">
             <h3> Bienvenido a</h3>
             <h1>Ola Hoteles </h1>
             <h3> Descanso y Confort</h3>
             <span> EXPERIMENTE NUESTRO HOTEL Y VEA LO QUE NOS DISTINGUE</span>
 
-            <p>Para el viajero distinguido, ningún otro hotel en Bogotá ofrece una experiencia de estilo de vida más
+            <p>Para el viajero distinguido, ningún otro hotel en Santa Marta ofrece una experiencia de estilo de vida
+                más
                 contemporánea que Olas Hoteles. Nuestras habitaciones de alta tecnología, restaurantes de clase mundial,
                 exquisitos salones para banquetes y un servicio atento nos distinguen. La conveniencia, la conectividad
-                y la
-                comodidad están incorporadas en los diseños de nuestras habitaciones para asegurarnos de que se sienta
-                como
-                en casa. ¡Ven a visitarnos y descubre lo que significa vivir la vida!</p>
+                y la comodidad están incorporadas en los diseños de nuestras habitaciones para asegurarnos de que se
+                sienta como en casa. ¡Ven a visitarnos y descubre lo que significa vivir la vida!</p>
         </div>
         <div id="confondo">
-            <h1 class="text-center">Nuestros servicios</h1>
+            <h1 class="text-center">Habitaciones y Servicios</h1>
+            <h3> Bienvenido al lujo tranquilo de Santa Marta</h3>
             <div class="flexbox">
                 <div class="tarjeta-wrap">
                     <div class="tarjeta">
                         <div class="adelante card-1"></div>
                         <div class="atras">
                             <div class="titulo">
-                                Doble
+                                Deluxe
                             </div>
-                            Una habitación sencilla cuenta con una sola cama, o tal vez te den una habitación con dos
-                            camas,
-                            pero eso no significa que puedan ingresar dos personas.
+                            Deluxe con cama tamaño King
                         </div>
                     </div>
                 </div>
@@ -117,8 +146,7 @@
                         <div class="adelante card-2"></div>
                         <div class="atras">
                             <span>Doble</span>
-                            Una habitación doble puede tener dos camas o una cama matrimonial o king size. Es para dos
-                            personas, no más.
+                            Deluxe con camas dobles
                         </div>
                     </div>
                 </div>
@@ -127,9 +155,7 @@
                         <div class="adelante card-3"></div>
                         <div class="atras">
                             <span>Suite</span>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit aperiam explicabo
-                            nihil
-                            porro.
+                            King Concierge
                         </div>
                     </div>
                 </div>
@@ -137,10 +163,8 @@
                     <div class="tarjeta">
                         <div class="adelante card-3"></div>
                         <div class="atras">
-                            <span>Spa</span>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit aperiam explicabo
-                            nihil
-                            porro.
+                            <span>Suite</span>
+                            Suite Junior
                         </div>
                     </div>
                 </div>
@@ -198,20 +222,26 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img class="mb-2" src="assets/img/logo-ola.png" alt="" width="100" height="100">
-                    <small class="d-block mb-3 text-muted">© 2021</small>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="assets/img/logo-ola.png" alt="" width="110" height="100">
+                    </div>
                 </div>
-
+                <div class="row">
+                    <div class="col text-center">
+                        <small class="d-block mb-3 text-muted">© 2021</small>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="assets/css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/sweetalert2@10.js"></script>
     <script src="assets/js/codigos.js"></script>
 </body>
 
