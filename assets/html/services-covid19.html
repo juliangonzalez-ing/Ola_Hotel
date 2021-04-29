@@ -23,13 +23,13 @@
                         <a class="nav-link" href="../../index.html" target="_blank">Inicio </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link" href="#" onclick="loSentimos()">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="loSentimos()">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Reservaciones</a>
+                        <a class="nav-link disabled" href="#" onclick="loSentimos()">Reservaciones</a>
                     </li>
                 </ul>
             </div>
@@ -47,12 +47,14 @@
             </div>
         </nav>
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <i class="fas fa-cookie-bite"></i><strong> Atención</strong> Este sitio web almacena automaticamente cookies ;)
+            <i class="fas fa-cookie-bite"></i><strong> Atención</strong> Este sitio web almacena automaticamente cookies
+            ;)
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="height: 500px;">
+        <!-- 
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="height: 500px;">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="../img/hotel-exterior1.jpg" style="height: 500px;" class="d-block w-100">
@@ -104,18 +106,22 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="jumbotron text-center" id="confondo">
-            <h1> ¡Cuidamos de Ti!</h1>
-            <h3>Nuestra prioridad siempre ha sido cuidar de ti para que puedas centrarte en lo que más te importa. </h3>
+        </div>-->
+        <div class="text-center" id="confondo">
+            <h1>¡Cuidamos de Ti!</h1>
+            <h3 id="subtitulo-div" class="lead"> <strong> Nuestra prioridad siempre ha sido cuidar de ti para que puedas
+                    centrarte en lo que más te importa.</strong> </h3>
 
-            <p>Como parte de la familia de marcas de Ola Hoteles International, hemos establecido varios nuevos
+            <p class="lead">Como parte de la familia de marcas de Ola Hoteles International, hemos establecido varios
+                nuevos
                 protocolos
-                y prácticas especiales, en respuesta a la pandemia del COVID-19 y hemos mantenido nuestros estrictos
+                y prácticas especiales, en respuesta a la pandemia del <u><strong> COVID-19 </strong></u>y hemos
+                mantenido nuestros estrictos
                 estándares de limpieza y nuestro compromiso de ofrecer un excelente servicio. También hemos realizado
                 algunos ajustes en los servicios, amenidades e instalaciones disponibles durante tu estancia. <br>
 
-                Esto es lo que puedes esperar durante tu estancia en Santa Marta Ola Hoteles.</p>
+                <strong> Esto es lo que puedes esperar durante tu estancia en Santa Marta Ola Hoteles.</strong>
+            </p>
         </div>
 
 
@@ -126,7 +132,7 @@
                         <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
                             id="texto-lista">
-                            <i class="fas fa-users"></i> RESPONSABILIDAD COMPARTIDA
+                            <i class="fas fa-users"></i> RESPONSABILIDAD COMPARTIDA <i class="fas fa-people-arrows"></i>
                         </button>
                     </h2>
                 </div>
@@ -135,18 +141,19 @@
                     data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-7 d-flex justify-content-center align-items-center">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
                                 <img class="w-75" src="../img/recepcion-hotel.jpg" alt="recepcion-hotel">
                             </div>
-                            <div class="col-5">
-                                <p class="text-justify" id="parrafos">
+                            <div class="col-7">
+                                <p class="text-justify lead" id="parrafos">
                                     Nuestra prioridad es garantizar un entorno más seguro para nuestros huéspedes y
                                     empleados. Alcanzar este objetivo es una responsabilidad compartida. Únase a
                                     nuestros esfuerzos para mejorar la seguridad de nuestros espacios públicos
                                     cumpliendo con los reglamentos locales y usando mascarillas, cuyo uso es obligatorio
                                     siempre que esté en las áreas públicas del hotel. Agradecemos su colaboración y su
                                     comprensión. También le recordamos poner en práctica el distanciamiento social,
-                                    manteniéndose al menos a 2 metros de distancia de los huéspedes y empleados del
+                                    manteniéndose al menos a <strong> 2 metros de distancia </strong> de los huéspedes y
+                                    empleados del
                                     hotel.
                                 </p>
                             </div>
@@ -160,7 +167,8 @@
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
                             id="texto-lista">
-                            <i class="fas fa-head-side-mask"></i> MEDIDAS DE DISTANCIAMIENTO SOCIAL Y EXPERIENCIAS SIN CONTACTO
+                            <i class="fas fa-head-side-mask"></i> MEDIDAS DE DISTANCIAMIENTO SOCIAL Y EXPERIENCIAS SIN
+                            CONTACTO
                         </button>
                     </h2>
                 </div>
@@ -171,9 +179,9 @@
                                 <img class="w-75" src="../img/personal-bioseguridad.jpg" alt="recepcion-hotel">
                             </div>
                             <div class="col-6" id="parrafos">
-                                <p>
+                                <p class="lead">
                                     Notará varias medidas implementadas en todo el hotel, que incluyen:
-                                <ul>
+                                <ul class="lead">
 
                                     <li type="circle">Barreras protectoras acrílicas instaladas en nuestra recepción y
                                         puntos de contacto
@@ -189,9 +197,9 @@
                                         control de temperatura, requerido por ley, al momento de su llegada al hotel.
                                     </li>
 
-                                    <li type="circle">Mobile check-in y llave móbil, servicio de solitudes por chat y
+                                    <li type="circle">Mobile check-in y llave móvil, servicio de solitudes por chat y
                                         room service a
-                                        través de código QR que encontrará en su habitación. y via la aplicación móbil
+                                        través de código QR que encontrará en su habitación. y via la aplicación móvil
                                         de <strong> OlasApp</li></strong>
                                 </ul>
                                 </p>
@@ -218,10 +226,10 @@
                                 <img class="w-80" src="../img/bioseguridad.jpg" alt="">
                             </div>
                             <div class="col-5" id="parrafos">
-                                <p>
+                                <p class="lead">
                                     Nos tomamos muy en serio los estándares de limpieza e higiene. Notará varias mejoras
                                     en nuestras prácticas de limpieza en todo el hotel, que incluyen:
-                                <ul>
+                                <ul class="lead">
                                     <strong>
                                         <li type="circle">Limpieza mejorada del espacio público:
                                     </strong> Hemos aumentado la frecuencia de limpieza y desinfección, especialmente en
@@ -235,12 +243,16 @@
                                     </li>
 
                                 </ul>
-                                Todas las habitaciones se limpian a fondo y se desinfectan antes de su llegada. Durante
-                                su estancia, no limpiaremos su habitación automáticamente cada día. Si desea recibir
-                                diariamente el servicio de limpieza de habitación, comuníquese con nuestro equipo de
-                                Servicios para huéspedes. Organizaremos con gusto un horario de limpieza que se ajuste a
-                                sus preferencias. Tenga en cuenta que si su estancia con nosotros se prolonga un poco,
-                                limpiaremos su habitación automáticamente cada 5 noches.
+                                <p> Todas las habitaciones se limpian a fondo y se desinfectan antes de su llegada.
+                                    Durante
+                                    su estancia, no limpiaremos su habitación automáticamente cada día. Si desea recibir
+                                    diariamente el servicio de limpieza de habitación, comuníquese con nuestro equipo de
+                                    Servicios para huéspedes. Organizaremos con gusto un horario de limpieza que se
+                                    ajuste a
+                                    sus preferencias. Tenga en cuenta que si su estancia con nosotros se prolonga un
+                                    poco,
+                                    limpiaremos su habitación automáticamente cada 5 noches.
+                                </p>
                                 </p>
                             </div>
                         </div>
@@ -265,22 +277,26 @@
                                 <img class="w-80" src="../img/spa-services.jpg" alt="spa-services">
                             </div>
                             <div class="col-6" id="parrafos">
-                                <p class="text-justify" id="parrafos">
-                                <ul id="parrafos">
+                                <p class="text-justify " id="parrafos">
+                                <ul id="parrafos" class="lead">
                                     <li type="circle">
-                                        <strong> Gimnasio:</strong> Abierto de 6am a 9pm todos los días, para dar
+                                        <strong><i class="fas fa-dumbbell"></i> Gimnasio:</strong> Abierto de <strong>
+                                            6am a 9pm </strong>todos los días, para dar
                                         cumplimiento a la
                                         normativa de distanciamiento social, contamos con capacidad limitada de
                                         personas, se requiere reservación previa. Se debe usar tapabocas en todo
                                         momento.
                                     </li>
-                                    <li> <strong> Spa:</strong> Abierto de 8a.m a 8p.m de lunes a sábado, domingos y
+                                    <li> <strong><i class="fas fa-spa"></i> Spa:</strong> Abierto de <strong> 8a.m a
+                                            8p.m </strong>de lunes a sábado, domingos y
                                         festivos de 9a.m a 7p.m, se requiere reservación previa.</li>
-                                    <li> <strong> Playa:</strong> Abierta de 7:00am a 6:00pm. Para dar cumplimiento a la
+                                    <li> <strong><i class="fas fa-umbrella-beach"></i> Playa:</strong> Abierta de
+                                        <strong> 7:00am a 6:00pm</strong>. Para dar cumplimiento a la
                                         normativa de distanciamiento social, contamos con un número específico de
                                         mobiliario que se
                                         ajusta a dicha reglamentación.</li>
-                                    <li> <strong> Piscina: </strong>Abierta todos los días de 9:00am a 9:00pm. Para dar
+                                    <li> <strong> <i class="fas fa-swimmer"></i> Piscina: </strong>Abierta todos los
+                                        días de <strong> 9:00am a 9:00pm</strong>. Para dar
                                         cumplimiento a la
                                         normativa de distanciamiento social, hemos establecido la capacidad máxima de
                                         personas y contamos con un número de mobiliario acorde a la reglamentación.
@@ -295,55 +311,59 @@
             </div>
         </div>
     </div>
-<footer>
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 segment-one mt-2">
-                    <h3><i class="fas fa-angle-right"></i> Sobre Nosotros</h3>
-                    <p class="parrafos-footer"><ul>
-                        <li><i class="fas fa-map-marker-alt"></i>  Santa Marta, Colombia</li>
-                       <li><i class="fas fa-phone-alt"></i>  Telefono: (031) 886 00 00</li>
-                       <li><i class="fas fa-id-card"></i> <a href="../html/contact.html" target="_blank">Contactenos</a> </li>
-                    </ul>
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 segment-two mt-2">
-                    <h3 class="titulo3-footer"> <i class="fas fa-angle-right"></i> Servicios</h3>
-                    <ul>
-                        <li><a href="#"></a><i class="far fa-calendar-check"></i> Eventos</li>
-                        <li><a href="#"></a><i class="fas fa-concierge-bell"></i> Recepciones</li>
-                        <li><a href="#"></a><i class="fas fa-ring"></i> Bodas</li>
-                        <li><a href="#"></a><i class="fas fa-spa"></i> SPA</li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 segment-three mt-2">
-                    <h2> <i class="fas fa-angle-right"></i> Siguenos <i class="far fa-thumbs-up"></i></h2>
-                    <p class="parrafos-footer">En nuestras Redes Sociales </p>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 segment-four mt-2">
-                    <h2 class="titulo2-footer"><i class="fas fa-angle-right"></i> Suscribete</h2>
-                    <p class="parrafos-footer">Para obtener Noticias, Ofertas e información relevante de nuestro Hotel
-                        ingrese su correo!.
-                    </p>
-                    <form action="">
-                        <i class="fas fa-at"></i> <input type="email" name="" id="email_boletin">
-                        <input type="button" onclick="boletin()" value="Suscribirse">
-                    </form>
-                </div>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one mt-2">
+                        <h3><i class="fas fa-angle-right"></i> Sobre Nosotros</h3>
+                        <p class="parrafos-footer">
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Santa Marta, Colombia</li>
+                            <li><i class="fas fa-phone-alt"></i> Telefono: (031) 886 00 00</li>
+                            <li><i class="fas fa-id-card"></i> <a href="../html/contact.html"
+                                    target="_blank">Contactenos</a> </li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-two mt-2">
+                        <h3 class="titulo3-footer"> <i class="fas fa-angle-right"></i> Servicios</h3>
+                        <ul>
+                            <li><a href="#"></a><i class="far fa-calendar-check"></i> Eventos</li>
+                            <li><a href="#"></a><i class="fas fa-concierge-bell"></i> Recepciones</li>
+                            <li><a href="#"></a><i class="fas fa-ring"></i> Bodas</li>
+                            <li><a href="#"></a><i class="fas fa-spa"></i> SPA</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-three mt-2">
+                        <h2> <i class="fas fa-angle-right"></i> Siguenos <i class="far fa-thumbs-up"></i></h2>
+                        <p class="parrafos-footer">En nuestras Redes Sociales </p>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-four mt-2">
+                        <h2 class="titulo2-footer"><i class="fas fa-angle-right"></i> Suscribete</h2>
+                        <p class="parrafos-footer">Para obtener Noticias, Ofertas e información relevante de nuestro
+                            Hotel
+                            ingrese su correo!.
+                        </p>
+                        <form action="">
+                            <i class="fas fa-at"></i> <input type="email" name="" id="email_boletin">
+                            <input type="button" onclick="boletin()" value="Suscribirse">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <p class="footer-bottom-text text-center"><i class="fas fa-users"></i> &copy; Grupo 4 Bictia-Colsubsidio <i class="fas fa-users"></i>
+        </div>
+        <p class="footer-bottom-text text-center"><i class="fas fa-users"></i> &copy; Grupo 4 Bictia-Colsubsidio 2021<i
+                class="fas fa-users"></i>
 
-    </p>
-</footer>
+        </p>
+    </footer>
 
 
 </body>
