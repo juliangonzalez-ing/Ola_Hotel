@@ -14,7 +14,6 @@
 
 <body>
     <div class="container">
-
         <nav class="navbar navbar-fixed navbar-expand-lg navbar-dark" style="background-color: black;">
             <div class="collapse navbar-collapse w-100 order-1 order-lg-1" id="navbarNav">
                 <ul class="navbar-nav">
@@ -22,7 +21,7 @@
                         <a class="nav-link" href="#">Inicio </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="assets/html/services.html">Servicios</a>
+                        <a class="nav-link" href="assets/html/services-covid19.html">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="loSentimos()">Ofertas</a>
@@ -195,50 +194,61 @@
                 </div>
             </div>
         </div>
-        <footer class="pt-4 text-white" style="background-color: black;">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2 class="navbar-white">Siguenos en nuestras redes sociales</h2>
-                    <ul class="list-group list-group-horizontal justify-content-center"
-                        style="background-color: black;">
-                        <li class="list-group-item" style="border: none; background-color: black;">
-                            <a target="_blank" href="https://www.instagram.com/"><img class="logo"
-                                    src="assets/img/instagram-logo.png" alt="instagram-logo">
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="border: none;background-color: black;">
-                            <a target="_blank" href="https://www.facebook.com/"><img class="logo"
-                                    src="assets/img/facebook-logo.png" alt="facebook-logo">
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="border: none;background-color: black;">
-                            <a target="_blank" href="https://www.youtube.com/">
-                                <img class="logo" src="assets/img/youtube-logo.png" alt="youtube-logo"
-                                    style="background-color: #fff;border-radius: 20px;">
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="border: none;background-color: black;">
-                            <a target="_blank" href="https://www.whatsapp.com/">
-                                <img class="logo" src="assets/img/whatsapp-logo.png" alt="youtube-logo">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <img src="assets/img/logo-ola.png" alt="" width="110" height="100">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <small class="d-block mb-3 text-muted">© 2021</small>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-one mt-2">
+                            <h3><i class="fas fa-angle-right"></i> Sobre Nosotros</h3>
+                            <p class="parrafos-footer">
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> Santa Marta, Colombia</li>
+                                <li><i class="fas fa-phone-alt"></i> Telefono: (031) 886 00 00</li>
+                                <li><i class="fas fa-id-card"></i> <a href="../html/contact.html"
+                                        target="_blank">Contactenos</a> </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-two mt-2">
+                            <h3 class="titulo3-footer"> <i class="fas fa-angle-right"></i> Servicios</h3>
+                            <ul>
+                                <li><a href="#"></a><i class="far fa-calendar-check"></i> Eventos</li>
+                                <li><a href="#"></a><i class="fas fa-concierge-bell"></i> Recepciones</li>
+                                <li><a href="#"></a><i class="fas fa-ring"></i> Bodas</li>
+                                <li><a href="#"></a><i class="fas fa-spa"></i> SPA</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-three mt-2">
+                            <h2> <i class="fas fa-angle-right"></i> Siguenos <i class="far fa-thumbs-up"></i></h2>
+                            <p class="parrafos-footer">En nuestras Redes Sociales </p>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-four mt-2">
+                            <h2 class="titulo2-footer"><i class="fas fa-angle-right"></i> Suscribete</h2>
+                            <p class="parrafos-footer">Para obtener Noticias, Ofertas e información relevante de nuestro
+                                Hotel
+                                ingrese su correo!.
+                            </p>
+                            <form action="">
+                                <i class="fas fa-at"></i> <input type="email" name="" id="email_boletin">
+                                <input type="button" onclick="boletin()" value="Suscribirse">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <p class="footer-bottom-text text-center"><i class="fas fa-users"></i> &copy; Grupo 4 Bictia-Colsubsidio 2021<i
+                    class="fas fa-users"></i>
+    
+            </p>
+        </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
