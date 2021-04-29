@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-indexnew.css">
+    <link rel="stylesheet" href="/assets/FontAwesome/css/all.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <title>Ola Hoteles</title>
 </head>
 
@@ -19,16 +21,17 @@
                         <a class="nav-link" href="#">Inicio </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="assets/html/services-covid19.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#" onclick="loSentimos()">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link disabled" href="#">Reservaciones</a>
                     </li>
                 </ul>
             </div>
+
             <div class="d-flex w-100 order-0">
                 <div class="w-100">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -41,41 +44,68 @@
                 <!--             <span class="w-100"></span> -->
             </div>
         </nav>
-
-        <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel" style="border-radius: 10px;">
+<div class="alert alert-warning alert-dismissible fade show fixed-bottom container" role="alert">
+            <i class="fas fa-cookie-bite"></i> <strong>Atención</strong> Este sitio web almacena automaticamente cookies
+            ;)
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading text-center"><i class="fas fa-hotel"></i> Bienvenido <i class="fas fa-hotel"></i></h4>
+            <p>Si visita nuestras instalaciones, Tenga en cuenta que se requiere el uso de mascarillas en todas las
+                áreas públicas en el interior.</p>
+            <hr>
+            <p class="mb-0">La salud y la seguridad de nuestros huéspedes son nuestra principal prioridad: <a
+                    href="./assets/html/services-covid19.html" target="_blank"><i class="fas fa-hands-wash"></i>
+                    Actualizaciones sobre el COVID-19 y qué esperar en
+                    nuestro hotel.</a></p>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="height: 500px;">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/cama-suite.jpg" style="height: 500px;" class="d-block w-100">
+                    <img src="assets/img/hotel-exterior1.jpg" style="height: 500px;" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/camas-hotel.jpg" style="height: 500px;" class="d-block w-100">
+                    <img src="assets/img/hotel-exterior2.jpg" style="height: 500px;" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/cuartohotel.jpg" style="height: 500px;" class="d-block w-100">
+                    <img src="assets/img/hotel-exterior3.jpg" style="height: 500px;" class="d-block w-100">
                 </div>
-            </div>                   
+                <div class="carousel-item">
+                    <img src="assets/img/hotel-exterior4.jpg" style="height: 500px;" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hotel-exterior5.jpg" style="height: 500px;" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hotel-interior1.jpg" style="height: 500px;" class="d-block w-100">
+                </div>
+            </div>
+
             <div class="card-img-overlay">
                 <div class="container" style="padding-top: 50px;">
                     <div class="row justify-content-end align-items-center">
                         <div class="col-sm-4">
-                            <div class="card shadow-lg confondo">
+                            <div class="card shadow-lg">
                                 <div class="card-body bg-dark">
                                     <form action="">
                                         <div class="form-group">
                                             <h2 class="h4 text-center text-white">Quiero información</h2>
                                             <div class="form-group">
                                                 <input type="text" class="form-control form-control-sm"
-                                                    placeholder="Nombre:">
+                                                    placeholder="Su Nombre:" id="nombre_user">
                                             </div>
                                             <div class="form-group">
                                                 <input type="text" class="form-control form-control-sm"
-                                                    placeholder="Email:">
+                                                    placeholder="Su Email:" id="email_user">
                                             </div>
-                                            <input type="submit" value="Recibir información"
-                                                class="btn btn-outline-info btn-block">
+                                            <input type="button" value="Recibir información"
+                                                class="btn btn-outline-success btn-block" onclick="darInformacion()">
                                         </div>
                                         <p class="small text-white">*Si tienes una consulta personalizada da click <a
-                                                href="assets/html/contact.html">aquí</a>
+                                                href="assets/html/contact.html" target="_blank">aquí</a>
                                         </p>
                                     </form>
                                 </div>
@@ -86,38 +116,31 @@
             </div>
         </div>
 
-        <br>
-                
-        <div class="jumbotron text-center confondo">
+        <div class="jumbotron text-center" id="confondo">
             <h3> Bienvenido a</h3>
-            <h1>Ola Hoteles </h1>
+            <h1><i class="fas fa-water"></i> Ola Hoteles <i class="fas fa-water"></i></h1>
             <h3> Descanso y Confort</h3>
             <span> EXPERIMENTE NUESTRO HOTEL Y VEA LO QUE NOS DISTINGUE</span>
 
-            <p>Para el viajero distinguido, ningún otro hotel en Bogotá ofrece una experiencia de estilo de vida más
+            <p>Para el viajero distinguido, ningún otro hotel en Santa Marta ofrece una experiencia de estilo de vida
+                más
                 contemporánea que Olas Hoteles. Nuestras habitaciones de alta tecnología, restaurantes de clase mundial,
                 exquisitos salones para banquetes y un servicio atento nos distinguen. La conveniencia, la conectividad
-                y la
-                comodidad están incorporadas en los diseños de nuestras habitaciones para asegurarnos de que se sienta
-                como
-                en casa. ¡Ven a visitarnos y descubre lo que significa vivir la vida!</p>
+                y la comodidad están incorporadas en los diseños de nuestras habitaciones para asegurarnos de que se
+                sienta como en casa. ¡Ven a visitarnos y descubre lo que significa vivir la vida!</p>
         </div>
-
-        <div class="confondo">
-            <h1 class="text-center">Nuestros servicios</h1>
+        <div id="confondo">
+            <h1 class="text-center mt-4 pt-4">Habitaciones y Servicios</h1>
+            <h3> Bienvenido al lujo tranquilo de Santa Marta</h3>
             <div class="flexbox">
                 <div class="tarjeta-wrap">
                     <div class="tarjeta">
                         <div class="adelante card-1"></div>
                         <div class="atras">
-                            <div class="card confondo" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Habitación doble</h3>
-                                    <p class="card-text">Una habitación doble puede tener dos camas o una cama
-                                        matrimonial o king size. Es para dos
-                                        personas, no más.</p>
-                                </div>
+                            <div class="titulo">
+                                Deluxe
                             </div>
+                            Deluxe con cama tamaño King
                         </div>
                     </div>
                 </div>
@@ -125,14 +148,8 @@
                     <div class="tarjeta">
                         <div class="adelante card-2"></div>
                         <div class="atras">
-                            <div class="card confondo" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Habitación doble</h3>
-                                    <p class="card-text">Una habitación doble puede tener dos camas o una cama
-                                        matrimonial o king size. Es para dos
-                                        personas, no más.</p>
-                                </div>
-                            </div>
+                            <span>Doble</span>
+                            Deluxe con camas dobles
                         </div>
                     </div>
                 </div>
@@ -140,14 +157,8 @@
                     <div class="tarjeta">
                         <div class="adelante card-3"></div>
                         <div class="atras">
-                            <div class="card confondo" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Habitación doble</h3>
-                                    <p class="card-text">Una habitación doble puede tener dos camas o una cama
-                                        matrimonial o king size. Es para dos
-                                        personas, no más.</p>
-                                </div>
-                            </div>
+                            <span>Suite</span>
+                            King Concierge
                         </div>
                     </div>
                 </div>
@@ -155,14 +166,8 @@
                     <div class="tarjeta">
                         <div class="adelante card-3"></div>
                         <div class="atras">
-                            <div class="card confondo" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Habitación doble</h3>
-                                    <p class="card-text">Una habitación doble puede tener dos camas o una cama
-                                        matrimonial o king size. Es para dos
-                                        personas, no más.</p>
-                                </div>
-                            </div>
+                            <span>Suite</span>
+                            Suite Junior
                         </div>
                     </div>
                 </div>
@@ -170,14 +175,10 @@
                     <div class="tarjeta">
                         <div class="adelante card-2"></div>
                         <div class="atras">
-                            <div class="card confondo" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Habitación doble</h3>
-                                    <p class="card-text">Una habitación doble puede tener dos camas o una cama
-                                        matrimonial o king size. Es para dos
-                                        personas, no más.</p>
-                                </div>
-                            </div>
+                            <span>Sauna</span>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit aperiam explicabo
+                            nihil
+                            porro.
                         </div>
                     </div>
                 </div>
@@ -185,66 +186,77 @@
                     <div class="tarjeta">
                         <div class="adelante card-1"></div>
                         <div class="atras">
-                            <div class="card confondo" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Habitación doble</h3>
-                                    <p class="card-text">Una habitación doble puede tener dos camas o una cama
-                                        matrimonial o king size. Es para dos
-                                        personas, no más.</p>
-                                </div>
-                            </div>
+                            <span>Baño turco</span>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit aperiam explicabo
+                            nihil
+                            porro.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <br>
-
-        <footer class="pt-4 text-white" style="background-color: black;">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2 class="navbar-white">Siguenos en nuestras redes sociales</h2>
-                    <ul class="list-group list-group-horizontal justify-content-center"
-                        style="background-color: black;">
-                        <li class="list-group-item" style="border: none; background-color: black;">
-                            <a target="_blank" href="https://www.instagram.com/"><img class="logo"
-                                    src="assets/img/instagram-logo.png" alt="instagram-logo">
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="border: none;background-color: black;">
-                            <a target="_blank" href="https://www.facebook.com/"><img class="logo"
-                                    src="assets/img/facebook-logo.png" alt="facebook-logo">
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="border: none;background-color: black;">
-                            <a target="_blank" href="https://www.youtube.com/">
-                                <img class="logo" src="assets/img/youtube-logo.png" alt="youtube-logo"
-                                    style="background-color: #fff;border-radius: 20px;">
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="border: none;background-color: black;">
-                            <a target="_blank" href="https://www.whatsapp.com/">
-                                <img class="logo" src="assets/img/whatsapp-logo.png" alt="youtube-logo">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img class="mb-2" src="assets/img/logo-ola.png" alt="" width="100" height="100">
-                    <small class="d-block mb-3 text-muted">© 2021</small>
-                </div>
-
-            </div>
-        </footer>        
     </div>
-    <script src="assets/js/sweetalert.js"></script>
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-one mt-2">
+                            <h3><i class="fas fa-angle-right"></i> Sobre Nosotros</h3>
+                            <p class="parrafos-footer">
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> Santa Marta, Colombia</li>
+                                <li><i class="fas fa-phone-alt"></i> Telefono: (031) 886 00 00</li>
+                                <li><i class="fas fa-id-card"></i> <a href="../html/contact.html"
+                                        target="_blank">Contactenos</a> </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-two mt-2">
+                            <h3 class="titulo3-footer"> <i class="fas fa-angle-right"></i> Servicios</h3>
+                            <ul>
+                                <li><a href="#"></a><i class="far fa-calendar-check"></i> Eventos</li>
+                                <li><a href="#"></a><i class="fas fa-concierge-bell"></i> Recepciones</li>
+                                <li><a href="#"></a><i class="fas fa-ring"></i> Bodas</li>
+                                <li><a href="#"></a><i class="fas fa-spa"></i> SPA</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-three mt-2">
+                            <h2> <i class="fas fa-angle-right"></i> Siguenos <i class="far fa-thumbs-up"></i></h2>
+                            <p class="parrafos-footer">En nuestras Redes Sociales </p>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-four mt-2">
+                            <h2 class="titulo2-footer"><i class="fas fa-angle-right"></i> Suscribete</h2>
+                            <p class="parrafos-footer">Para obtener Noticias, Ofertas e información relevante de nuestro
+                                Hotel
+                                ingrese su correo!.
+                            </p>
+                            <form action="">
+                                <i class="fas fa-at"></i> <input type="email" name="" id="email_boletin">
+                                <input type="button" onclick="boletin()" value="Suscribirse">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <p class="footer-bottom-text text-center"><i class="fas fa-users"></i> &copy; Grupo 4 Bictia-Colsubsidio 2021<i
+                    class="fas fa-users"></i>
+    
+            </p>
+        </footer>
+    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="assets/css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/FontAwesome/js/all.js"></script>
+    <script src="assets/js/sweetalert2@10.js"></script>
     <script src="assets/js/codigos.js"></script>
 </body>
 
