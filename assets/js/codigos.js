@@ -49,3 +49,6 @@ function select(){
     }
     console.log(precio)
 }
+function informacion(){
+    
+}
