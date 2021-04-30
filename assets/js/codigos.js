@@ -29,7 +29,7 @@ function darInformacion() {
             title: 'Error',
             text: 'Por favor ingrese todos los datos!',
         })        
-    } else if (nombre.value == '') {
+    } else if (email.value == '') {
         email.focus();
         Swal.fire({
             icon: 'error',
