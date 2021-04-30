@@ -1,30 +1,30 @@
 body {
-    
+    background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(24,121,157,1) 50%, rgba(0,0,0,1) 100%);
-    color: white;
-    font-weight: bolder;
+    /*
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(27,168,221,1) 100%);
+color: white;*/
+/*background: rgb(185,201,196);
+background: linear-gradient(180deg, rgba(185,201,196,0.9668242296918768) 0%, rgba(11,13,13,1) 1%, rgba(21,20,54,1) 100%);*/
 }
-#portada{
-    color: rgb(235, 235, 243);
-    font-size: larger;
+h3{
+    font-size: 40px;
+    text-align: center;
 }
-/* #confondo{
-    background-color: rgba(255,255,255,0.3);
-    backdrop-filter: blur(20px);
-  } */
-
-.confondo {
-    border-radius: 10px;
-    border: solid 5px rgba(255, 255, 255, .1);
-    background: linear-gradient(-45deg, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .05) 60%, rgba(255, 255, 255, .05) 80%, rgba(0, 0, 0, .1) 80%);
-    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .05) 60%, rgba(255, 255, 255, .05) 80%, rgba(0, 0, 0, .1) 80%);
-    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .05) 60%, rgba(255, 255, 255, .05) 80%, rgba(0, 0, 0, .1) 80%);
+h1{
+    font-size: 70px;
+}
+.navbar-nav{
+    font-size: 20px;
 }
 
-#carouselExampleSlidesOnly{
-    background-color: none;
-}
+  #confondo{
+      background-color: #000;
 
+   /*background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(20px);*/
+  }
 
 .flexbox {
     display: flex;
