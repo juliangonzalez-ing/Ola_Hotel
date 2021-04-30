@@ -28,7 +28,7 @@
               
               <div class="carousel-caption d-none d-md-block  confondo"id="portada" >
                   <h1>Contacto</h1>
-                <h3>Ola Hoteles</h3>
+                <h3 id="letrero">Ola Hoteles</h3>
                 <span> EXPERIMENTE NUESTRO HOTEL Y VEA LO QUE NOS DISTINGUE</span>
                 <p>Dejanos tus datos para que un asesor se contacte contigo</p>
               </div>
@@ -38,7 +38,7 @@
         <div class="container">
         <div class="row">
             <div class="col-7">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6581.361123082389!2d-74.21613592672828!3d11.239273221548878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4f57c1ba015c5%3A0x60b0682b8a1a5543!2sBest%20Western%20Plus%20Santa%20Marta%20Hotel!5e0!3m2!1ses-419!2sco!4v1619578877897!5m2!1ses-419!2sco" width="600" height="450" style="border:0;"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6581.361123082389!2d-74.21613592672828!3d11.239273221548878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4f57c1ba015c5%3A0x60b0682b8a1a5543!2sBest%20Western%20Plus%20Santa%20Marta%20Hotel!5e0!3m2!1ses-419!2sco!4v1619578877897!5m2!1ses-419!2sco" width="600" height="500" style="border:0;"></iframe>
                      
             </div>
             <div class="col-5">
@@ -48,13 +48,13 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Nombres</label>
+                                <label for="exampleInputPassword1" id="nomb">Nombres</label>
                                 <input type="text" class="form-control" id="exampleInputPassword1">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Apellidos</label>
+                                <label for="exampleInputPassword1" id="apellido">Apellidos</label>
                                 <input type="text" class="form-control" id="exampleInputPassword1">
                             </div>
                         </div>
@@ -62,13 +62,13 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Teléfono</label>
+                                <label for="exampleInputPassword1" id="numer">Teléfono</label>
                                 <input type="text" class="form-control" id="exampleInputPassword1">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Email</label>
+                                <label for="exampleInputPassword1" id="correo">Email</label>
                                 <input type="text" class="form-control" id="exampleInputPassword1">
                             </div>
                         </div>
@@ -76,12 +76,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <label for="exampleFormControlTextarea1" id="mensaje">Dejanos tu mensaje</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
                             </div>
                         </div>                       
                     </div>
-                    <button  ondblclick="informacion()" type="submit" class="btn btn-primary">Enviar información</button>
+                    <button  onclick="informacion()" type="submit" class="btn btn-primary">Enviar información</button>
                   </form>
             </div>
         </div>
@@ -126,7 +126,8 @@
             </div>
         </footer>
     </div>
-
+   
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

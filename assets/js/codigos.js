@@ -50,5 +50,25 @@ function select(){
     console.log(precio)
 }
 function informacion(){
+    let nombre=document.elementFromPoint("nomb").value
+    let apellido=document.elementFromPoint("apellido").value
+    let telefono=document.elementFromPoint("numero").value
+    let correo=document.elementFromPoint("correo").value
+    let mensaje=document.elementFromPoint("mensaje").value
+    
+
+/* f(nombre=!"" && apellido =!"" && telefono=! ){
+
+}
+ */
+
+    Swal.fire({
+        title: 'gracias',
+        text: 'pronto un asesor se comunicara contigo',
+        imageUrl: '../img/logo-ola.png',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
     
 }
