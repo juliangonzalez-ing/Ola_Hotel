@@ -18,16 +18,16 @@
         console.log("El número es impar");
     }
  *//* 
-   var num1 = prompt("ingrese un número: ");
-   var num2 = prompt("Cantidad de multiplicaciones: ");
-   if(num1 != '' && num2 != ''){
-       for(var x = 1; x <= num2; x++){                       
-           alert(num1 +" * " + x + " = " + (num1*x))                    
-       }
-   }else{        
-       alert('Ingrese todos los datos');
-   }
-   */
+  var num1 = prompt("ingrese un número: ");
+  var num2 = prompt("Cantidad de multiplicaciones: ");
+  if(num1 != '' && num2 != ''){
+      for(var x = 1; x <= num2; x++){                       
+          alert(num1 +" * " + x + " = " + (num1*x))                    
+      }
+  }else{        
+      alert('Ingrese todos los datos');
+  }
+  */
 $('#carouselExampleSlidesOnly').carousel({
     interval: 5000,
 });
@@ -61,7 +61,7 @@ function darInformacion() {
         })
     }
 }
-
+//alt + shift + f   <------- IDENTAR CODIGO u ORGANIZAR CODIGO
 function select() {
     var opc = document.getElementById("menu").value
 
@@ -72,31 +72,38 @@ function select() {
     }
     console.log(precio)
 }
-function informacion(){
-    let nombre=document.elementFromPoint("nomb").value
-    let apellido=document.elementFromPoint("apellido").value
-    let telefono=document.elementFromPoint("numero").value
-    let correo=document.elementFromPoint("correo").value
-    let mensaje=document.elementFromPoint("mensaje").value
-    
+function informacion() {
+    let nombre = document.getElementById("nomb").value
+    let apellido = document.getElementById("apellido").value
+    let telefono = document.getElementById("numero").value
+    let correo = document.getElementById("correo").value
+    let mensaje = document.getElementById("mensaje").value
 
-/* f(nombre=!"" && apellido =!"" && telefono=! ){
 
+    if (nombre != "" && apellido != "" && telefono != "" && correo != "" && mensaje != "") {
+
+
+        Swal.fire({
+            title: 'gracias',
+            text: 'pronto un asesor se comunicara contigo',
+            imageUrl: '../img/logo-ola.png',
+            imageWidth: 250,
+            imageHeight: 250,
+            imageAlt: 'Custom image',
+            timer: 3000,
+            showConfirmButton: false,
+        })
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'faltan datos por ingresar!',
+        })
+    }
 }
- */
 
-    Swal.fire({
-        title: 'gracias',
-        text: 'pronto un asesor se comunicara contigo',
-        imageUrl: '../img/logo-ola.png',
-        imageWidth: 400,
-        imageHeight: 200,
-        imageAlt: 'Custom image',
-      })
-}
-
-function boletin(){
-   let correoboletin = document.getElementById("email_boletin").value;
+function boletin() {
+    let correoboletin = document.getElementById("email_boletin").value;
     if (correoboletin != "") {
         Swal.fire({
             icon: 'success',
@@ -108,7 +115,7 @@ function boletin(){
             icon: 'error',
             title: 'Error',
             text: 'Olvidó Ingresar su correo',
-            
+
         })
     }
 }
