@@ -1,35 +1,5 @@
-/*     var num1 = prompt("Ingrese el primer número: ");
-    var num2 = prompt("Ingrese el segundo número: ");
-    var suma = parseInt(num1) + parseInt(num2);
-    alert("La suma de los números ingresados es: " + suma)
-    var contador = 1;
-    var sumaLista = 1;
-    while(contador <= suma){
-        console.log(sumaLista);
-        contador++;
-        sumaLista = sumaLista + contador;        
-    }
- */
-/* 
-    var num1 = prompt("ingrese un número: ");
-    if((num1 % 2) == 0){
-        console.log("El número es par");
-    }else{
-        console.log("El número es impar");
-    }
- *//* 
-   var num1 = prompt("ingrese un número: ");
-   var num2 = prompt("Cantidad de multiplicaciones: ");
-   if(num1 != '' && num2 != ''){
-       for(var x = 1; x <= num2; x++){                       
-           alert(num1 +" * " + x + " = " + (num1*x))                    
-       }
-   }else{        
-       alert('Ingrese todos los datos');
-   }
-   */
 $('#carouselExampleSlidesOnly').carousel({
-    interval: 5000,
+    interval: 3600,
 });
 
 
@@ -42,39 +12,43 @@ function loSentimos() {
 }
 
 function darInformacion() {
-    let nombre = document.getElementById("nombre_user").value;
-    let correo = document.getElementById("email_user").value;
-    if (nombre != "" && correo != "") {
+    let nombre = document.getElementById("nombre")
+    let email = document.getElementById("email")
+    if (nombre.value != "" && email.value != "") {
         Swal.fire({
             icon: 'success',
-            title: 'Gracias ' + nombre,
+            title: 'Recibido!',
             text: 'Pronto un Asesor lo contactará por correo para darle información',
-            footer: '<a href="assets/html/contact.html" target="_blank">Obtener Consulta detallada</a>',
-            timer: 10000,
+            timer: 2000,
+            showConfirmButton: false
+        })
+    } else if (nombre.value == '' && email.value == '') {
+        nombre.focus();
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Por favor ingrese todos los datos!',
+        })        
+    } else if (nombre.value == '') {
+        email.focus();
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Olvidó ingresar su nombre',
         })
     } else {
         Swal.fire({
             icon: 'error',
             title: 'Error',
-            text: 'Olvidó Ingresar un valor',
-            footer: '<a href="assets/html/contact.html" target="_blank">Obtener Consulta detallada</a>',
+            text: 'Olvidó ingresar su email',
         })
+        
     }
 }
 
-function select() {
-    var opc = document.getElementById("menu").value
 
-    let precio = 0;
-    if (opc == "papas") {
-        precio = 1000;
-        document.getElementById('hid').value = precio
-    }
-    console.log(precio)
-}
-
-function boletin(){
-   let correoboletin = document.getElementById("email_boletin").value;
+function boletin() {
+    let correoboletin = document.getElementById("email_boletin").value;
     if (correoboletin != "") {
         Swal.fire({
             icon: 'success',
@@ -86,7 +60,7 @@ function boletin(){
             icon: 'error',
             title: 'Error',
             text: 'Olvidó Ingresar su correo',
-            
+
         })
     }
 }

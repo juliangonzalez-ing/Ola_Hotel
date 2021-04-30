@@ -20,12 +20,13 @@ h1{
     font-size: 20px;
 }
 
-  #confondo{
-      background-color: #000;
-
-   /*background-color: rgba(255,255,255,0.3);
-    backdrop-filter: blur(20px);*/
-  }
+.confondo {
+    border-radius: 10px;
+    border: solid 5px rgba(255, 255, 255, .1);
+    background: linear-gradient(-45deg, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .05) 60%, rgba(255, 255, 255, .05) 80%, rgba(0, 0, 0, .1) 80%);
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .05) 60%, rgba(255, 255, 255, .05) 80%, rgba(0, 0, 0, .1) 80%);
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .05) 60%, rgba(255, 255, 255, .05) 80%, rgba(0, 0, 0, .1) 80%);
+}
 
 .flexbox {
     display: flex;
@@ -64,14 +65,24 @@ h1{
 }
 
 .card-1{
-    background-image: url("../img/cama-suite.jpg");
+    background-image: url("../img/deluxe-camaking1.jpg");
 }
 .card-2{
-    background-image: url("../img/masaje-hotel.jpg");
+    background-image: url("../img/deluxe-camadoble2.jpg");
 }
 .card-3{
-    background-image: url("../img/cuartohotel.jpg");
+    background-image: url("../img/cama-suite - copia.jpg");
 }
+.card-4{
+    background-image: url("../img/spa-hotel - copia.jpg");
+}
+.card-5{
+    background-image: url("../img/terraza-hotel.jpg");
+}
+.card-6{    
+    background-image: url("../img/gym.jpg");
+}
+
 
 .atras{
     transform: rotateY(180deg);
