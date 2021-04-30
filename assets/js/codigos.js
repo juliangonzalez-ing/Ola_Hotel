@@ -72,7 +72,7 @@ function select() {
     }
     console.log(precio)
 }
-function informacion(){
+function informacion(){}
     
 
 function boletin(){
