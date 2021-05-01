@@ -56,6 +56,7 @@ function select() {
     }
     console.log(precio)
 }
+
 function informacion() {
     let nombre = document.getElementById("nomb").value
     let apellido = document.getElementById("apellido").value
@@ -102,4 +103,13 @@ function boletin() {
 
         })
     }
+}
+
+function cupon(){
+    Swal.fire({
+        icon: 'success',
+        title: 'Genial!',
+        text: 'El código del cupón ha sido copiado, para redimirlo da click en el enlace.',
+        footer: '<a href="#">Redimir cupón</a>'
+    })
 }
