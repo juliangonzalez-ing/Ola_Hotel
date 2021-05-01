@@ -68,8 +68,8 @@ function informacion() {
 
 
         Swal.fire({
-            title: 'gracias',
-            text: 'pronto un asesor se comunicara contigo',
+            title: 'Gracias',
+            text: 'Pronto un asesor se comunicará contigo',
             imageUrl: '../img/logo-ola.png',
             imageWidth: 250,
             imageHeight: 250,
@@ -81,7 +81,7 @@ function informacion() {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'faltan datos por ingresar!',
+            text: 'Faltan datos por ingresar!',
         })
     }
 }
