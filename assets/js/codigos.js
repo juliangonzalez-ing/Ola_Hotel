@@ -1,5 +1,5 @@
 $('#carouselExampleSlidesOnly').carousel({
-    interval: 3600,
+    interval: 2000,
 });
 
 
