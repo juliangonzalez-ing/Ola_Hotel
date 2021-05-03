@@ -56,6 +56,7 @@ function select() {
     }
     console.log(precio)
 }
+
 function informacion() {
     let nombre = document.getElementById("nomb").value
     let apellido = document.getElementById("apellido").value
@@ -68,8 +69,8 @@ function informacion() {
 
 
         Swal.fire({
-            title: 'gracias',
-            text: 'pronto un asesor se comunicara contigo',
+            title: 'Gracias',
+            text: 'Pronto un asesor se comunicará contigo',
             imageUrl: '../img/logo-ola.png',
             imageWidth: 250,
             imageHeight: 250,
@@ -81,7 +82,7 @@ function informacion() {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'faltan datos por ingresar!',
+            text: 'Faltan datos por ingresar!',
         })
     }
 }
@@ -102,4 +103,13 @@ function boletin() {
 
         })
     }
+}
+
+function cupon(){
+    Swal.fire({
+        icon: 'success',
+        title: 'Genial!',
+        text: 'El código del cupón ha sido copiado, para redimirlo da click en el enlace.',
+        footer: '<a href="#">Redimir cupón</a>'
+    })
 }
