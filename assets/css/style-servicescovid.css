@@ -37,6 +37,20 @@ h1 {
 }
 
 #confondo {
+    background-image:url("../img/hote-covid.jpg");
+    /*background-image: url("../img/div-covid2.jpg");*/
+    background-size: cover;
+    /*reescala la imagen*/
+    background-position: center;
+    /*centra la imagen*/
+    background-repeat: no-repeat;
+    /*evita que se repita*/
+    letter-spacing: 1px;
+    opacity: 0.9;
+    /*background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(20px);*/
+}
+#confondoOfertas{
     background-image:url("../img/hotel-exterior2.jpg");
     /*background-image: url("../img/div-covid2.jpg");*/
     background-size: cover;
