@@ -1,16 +1,9 @@
+/* aca configuramos el intervalo de las imagenes del carrusel del INDEX */
 $('#carouselExampleSlidesOnly').carousel({
     interval: 2000,
 });
 
-
-function loSentimos() {
-    Swal.fire({
-        icon: 'info',
-        title: 'Lo Sentimos',
-        text: 'Este Sitio Web se encuentra en desarrollo, Lamentamos las molestias',
-    })
-}
-
+/* esta funcion toma los datos del formulario basico del index y valida */
 function darInformacion() {
     let nombre = document.getElementById("nombre")
     let email = document.getElementById("email")
@@ -46,17 +39,8 @@ function darInformacion() {
     }
 }
 //alt + shift + f   <------- IDENTAR CODIGO u ORGANIZAR CODIGO
-function select() {
-    var opc = document.getElementById("menu").value
 
-    let precio = 0;
-    if (opc == "papas") {
-        precio = 1000;
-        document.getElementById('hid').value = precio
-    }
-    console.log(precio)
-}
-
+/* esta funcion valida los datos del formulario de la pagina CONTACTO */
 function informacion() {
     let nombre = document.getElementById("nomb").value
     let apellido = document.getElementById("apellido").value
@@ -64,10 +48,7 @@ function informacion() {
     let correo = document.getElementById("correo").value
     let mensaje = document.getElementById("mensaje").value
 
-
     if (nombre != "" && apellido != "" && telefono != "" && correo != "" && mensaje != "") {
-
-
         Swal.fire({
             title: 'Gracias',
             text: 'Pronto un asesor se comunicará contigo',
@@ -87,6 +68,7 @@ function informacion() {
     }
 }
 
+/* esta funcion valida el correo introducido en el FOOTER */
 function boletin() {
     let correoboletin = document.getElementById("email_boletin").value;
     if (correoboletin != "") {
@@ -105,6 +87,7 @@ function boletin() {
     }
 }
 
+/* esta funcion se ejecuta en la pagina de OFERTAS */
 function cupon(){
     Swal.fire({
         icon: 'success',
